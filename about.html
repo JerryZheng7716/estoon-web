@@ -6,8 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
+<style>
+#allmap {width: 100%;height: 600px;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=v5D8piGAG3PD3fzTAPjdsTmlSb2AdBFU"></script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -32,6 +36,7 @@
 	
 <body>
 <!--navigation-->
+
 	<div class="top-nav">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -63,17 +68,28 @@
 <!-- banner1 -->
 	<div class="banner1">
 		<div class="container">
-			<h3>易事通</h3>
+			<h3>关于我们</h3>
 		</div>
 	</div>
+	
 <!-- //banner1 -->
 <!-- about -->
 	<div class="about">
 		<div class="container">
 			<div class="col-md-6 w3_about_grid">
-				<h3>易事通</span></h3>
-				<p><i>易事通</i>
-					易事通</p>
+				<h3>企业简介</span></h3>
+				<p style="color: #000000;font-size: 18px;"><i style="color: #2998ff;font-size: 30px;">estoon易事通</i>
+					绍兴易捷信息技术有限公司(简称: estoon易事通)是一家专注于互
+联网技术开发和运营的创新型企业。公司注册于有中国厨具之都之称的浙
+江嵊州市。公司主要着力于互联网技术开发在厨具等传统制造业具体应用
+场景，以促进物联网技术在实体产业的应用为主要目的。公司目前具有完
+全适合厨电企业的特色的ERP管理系统，能够精准地做到对产品的溯源、防
+伪、质保期管理、售后服务供应。公司着力打造一个适合厨电行业的大供
+应链管理到微用户的信息管理平台
+(S2B平台
+Supply chain platform To business)让供应端能够以足够低的成本和海
+量的客户建立直接的关系，保持一个近乎实时互动的状态，真正落实行业
+互联网+的精神，推进传统制造业的转型升级。</p>
 			</div>
 			<div class="col-md-6 w3_about_grid">
 				<img src="images/16.jpg" alt=" " class="img-responsive" />
@@ -85,28 +101,10 @@
 <!-- skills -->
 	<div class="skills">
 		<div class="container">
-			<h3 class="head">易事通</h3>
-			<p class="urna">易事通</p>
-			<div class="agileits_skills_grids">
-				<div class="col-md-6 agileits_skills_grid">
-					<div class='bar_group'>
-						<div class='bar_group__bar thin elastic' label='HTML / CSS Design' value='230'></div>
-						<div class='bar_group__bar thin elastic' label='Graphic Design' value='130'></div>
-						<div class='bar_group__bar thin elastic' label='SEO' value='160'></div>
-						<div class='bar_group__bar thin elastic' label='Wordpress' value='340'></div>
-					</div>
-				</div>
-				<div class="col-md-6 agileits_skills_grid">
-					<div class='bar_group'>
-						<div class='bar_group__bar thin elastic' label='App Development' value='190'></div>
-						<div class='bar_group__bar thin elastic' label='IT Consultancy' value='250'></div>
-						<div class='bar_group__bar thin elastic' label='Agency' value='120'></div>
-						<div class='bar_group__bar thin elastic' label='Theme Development' value='160'></div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<script src="js/bars.js"></script>
+			<h3 class="head">绍兴易捷信息技术有限公司</h3>
+			<div id="allmap"></div>
+			
+
 		</div>
 	</div>
 <!-- //skills -->
@@ -271,3 +269,19 @@
 <!-- //here ends scrolling icon -->
 </body>
 </html>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(120.8402585563, 29.5524367110), 19);  // 初始化地图,设置中心点坐标和地图级别
+	//添加地图类型控件
+	
+	map.addControl(new BMap.MapTypeControl({
+		mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));	  
+	map.setCurrentCity("嵊州");          // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	var marker = new BMap.Marker(new BMap.Point(120.8402585563, 29.5524367110));
+</script>
