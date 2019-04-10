@@ -14,11 +14,10 @@
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
-<link href='http://fonts.useso.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -34,7 +33,7 @@
 <!--navigation-->
 	<div class="top-nav">
 		<div class="container">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default ">
 				<div class="navbar-header navbar-left">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -49,10 +48,21 @@
 					<nav class="menu menu--shylock">
 						<ul class="nav navbar-nav link-effect-7" id="link-effect-7">
 							<li class="active"><a href="index.html" data-hover="主页">主页</a></li>
-							<li><a href="services.html" data-hover="解决方案">解决方案</a></li>
+							<li><a href="solution.html" data-hover="解决方案">解决方案</a></li>
+							<li class="dropdown" >
+								<a href="#" data-hover="产品介绍" class="dropdown-toggle" data-toggle="dropdown">
+									产品介绍
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#" data-hover="进销存系统">进销存系统</a></li>
+									<li><a href="#" data-hover="微信小程序">微信小程序</a></li>
+									<li><a href="#" data-hover="刻标软件">刻标软件</a></li>
+								</ul>
+							</li>
 							<li><a href="about.html" data-hover="关于我们">关于我们</a></li>
-							<li><a href="short-codes.html" data-hover="Short Codes">Short Codes</a></li>
-							<li><a href="mail.html" data-hover="Mail Us">Mail Us</a></li>
+							<!--<li><a href="short-codes.html" data-hover="Short Codes">Short Codes</a></li>-->
+							<!--<li><a href="mail.html" data-hover="Mail Us">Mail Us</a></li>-->
 						</ul>
 					</nav>
 				</div>
@@ -200,13 +210,13 @@
 <!-- //count-down -->
 <!-- work -->
 	<div class="work">
-		<h3 class="head">Featured Work</h3>
-		<p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
+		<h3 class="head">易事通</h3>
+		<p class="urna">厨电行业产业互联网的缔造者，传统企业向"互联网+"升级的推动者.</p>
 		<div class="agileits_work_grids">
 			<ul id="flexiselDemo1">			
 				<li>
 					<div class="agileits_work_grid view view-sixth">
-						<img src="images/2.jpg" alt=" " class="img-responsive" />
+						<img src="images/est_1.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
 							<a href="single.html" class="info">Read More</a>
 						</div>
@@ -214,7 +224,7 @@
 				</li>
 				<li>
 					<div class="agileits_work_grid view view-sixth">
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="images/est_2.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
 							<a href="single.html" class="info">Read More</a>
 						</div>
@@ -222,7 +232,7 @@
 				</li>
 				<li>
 					<div class="agileits_work_grid view view-sixth">
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
+						<img src="images/est_3.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
 							<a href="single.html" class="info">Read More</a>
 						</div>
@@ -230,7 +240,23 @@
 				</li>
 				<li>
 					<div class="agileits_work_grid view view-sixth">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
+						<img src="images/est_4.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<a href="single.html" class="info">Read More</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="agileits_work_grid view view-sixth">
+						<img src="images/est_5.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<a href="single.html" class="info">Read More</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="agileits_work_grid view view-sixth">
+						<img src="images/est_6.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
 							<a href="single.html" class="info">Read More</a>
 						</div>
@@ -271,38 +297,56 @@
 <!-- blog -->
 	<div class="blog" id="blog">
 		<div class="container">
-			<h3 class="head">Our Latest Blog</h3>
-			<p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
+			<h3 class="head">最新产品</h3>
+			<p class="urna">易事通进销存系统、易事通微信小程序、易事通刻标软件</p>
 			<div class="w3_blog_grids">
-				<div class="col-md-6 w3_blog_grid">
-					<div class="col-md-6 w3_blog_grid_left">
-						<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				<div class="col-md-4" >
+					<div class="w3_blog_grid view view-sixth">
+						<div class="col-md-12 product_grid_text product_grid_text_top">
+							<h4><a href="single.html">进销存系统</a></h4>
+							<h5>Progress storage systemt</h5>
+							<p>易事通核心产品，完成对企业的数据化管理.</p>
+						</div>
+						<div class="col-md-12 product_grid_img product_grid_img_bottom">
+							<a href="single.html"><img src="images/estoon_login.jpg" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="mask">
+							<a href="https://pt.estoon.com" class="info">点击进入系统</a>
+						</div>
 					</div>
-					<div class="col-md-6 w3_blog_grid_right">
-						<h4><a href="single.html">suscipit dolor</a></h4>
-						<h5>from blog post</h5>
-						<p>Cras vitae molestie urna, vel rhoncus urna. Quisque elementum hendrerit.</p>
-						<ul>
-							<li><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>20 July 2016</li>
-							<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">Admin</a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-6 w3_blog_grid">
-					<div class="col-md-6 w3_blog_grid_left">
-						<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				<div class="col-md-4">
+					<div class="w3_blog_grid view view-sixth">
+						<div class="col-md-7 product_grid_img product_grid_img_left">
+							<a href="single.html"><img src="images/weChat_app.png" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="col-md-5 product_grid_text product_grid_text_right">
+							<h4><a href="single.html">微信<br>小程序</a></h4>
+							<h5>WeChat<br>applet</h5>
+							<p>移植<br>进销存系统<br>部分功能，<br>方便手机使用.</p>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="mask">
+							<img src="images/weChat_app_QR.jpg">
+						</div>
 					</div>
-					<div class="col-md-6 w3_blog_grid_right">
-						<h4><a href="single.html">Quisque elemen</a></h4>
-						<h5>from blog post</h5>
-						<p>Cras vitae molestie urna, vel rhoncus urna. Quisque elementum hendrerit.</p>
-						<ul>
-							<li><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>21 July 2016</li>
-							<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">Admin</a></li>
-						</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="w3_blog_grid view view-sixth">
+						<div class="col-md-12 product_grid_text product_grid_text_top">
+							<h4><a href="single.html">刻标软件</a></h4>
+							<h5>Label print client</h5>
+							<p>为产品雕刻唯一产品识别码，溯源防伪.</p>
+						</div>
+						<div class="col-md-12 product_grid_img product_grid_img_bottom">
+							<a href="single.html"><img src="images/label_print_client.jpg" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="mask">
+							<a href="http://file.estoon.com/installation/labelPrintClient.rar" class="info">点击下载</a>
+						</div>
+						<div class="clearfix"> </div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -313,16 +357,10 @@
 	<div class="newsletter">
 		<div class="container">
 			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>Subscribe to Newsletter</h3>
-				<p>Donec porta lacus vitae urna placerat, vitae dapibus nulla eleifend. 
-					Donec aliquam neque quis felis viverra pulvinar. Aliquam erat volutpat. 
-					Nam enim metus, faucibus non porttitor id, laoreet quis sapien.</p>
-			</div>
-			<div class="col-md-6 w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value="Subscribe">
-				</form>
+				<h3>欢迎使用易事通服务平台</h3>
+				<p class="indent2">易事通是一家物联网技术在厨电企业应用的产业互联网企业，公司有完全适合厨电企业特色的ERP管理系统，
+					能够精准地做到对产品的溯源、防伪、保修期管理，用大数据实现上游供应链管理，
+					下游销售渠道管控以及售后服务集中供应的产业平台。系统服务电话：0575-81383566</p>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -333,9 +371,8 @@
 		<div class="container">
 			<div class="agileinfo_footer_grids">
 				<div class="col-md-4 agileinfo_footer_grid">
-					<h2><a href="index.html">Mercantile</a></h2>
-					<p>Etiam condimentum mi nec tortor euismod, id lobortis odio dictum. Cras 
-						suscipit elit eget mi volutpat facilisis.</p>
+					<h2><a>易捷信息</a></h2>
+					<p>易事通与易捷信息，均为绍兴易捷信息有限公司旗下品牌.其所有权均为绍兴易捷信息有限公司所有</p>
 					<ul class="social-icons">
 						<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
 						<li><a href="#" class="icon-button google"><i class="icon-google"></i><span></span></a></li>
@@ -344,27 +381,25 @@
 					</ul>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>Contact Info</h3>
+					<h3>联系方式</h3>
 					<ul class="agileinfo_footer_grid_list">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>浙江省嵊州市江二路25号</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@estoon.com">info@estoon.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0575-81383566</li>
 					</ul>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>Navigation</h3>
+					<h3>快速访问</h3>
 					<ul class="agileinfo_footer_grid_nav">
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">Home</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="services.html">Services</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">About Us</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="short-codes.html">Short Codes</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="mail.html">Mail Us</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">主页</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="solution.html">解决方案</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">关于我们</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="w3agile_footer_copy">
-				<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				<p>Copyright &copy; 2019.绍兴易捷信息有限公司 All rights reserved.<a target="_blank" href="http://www.estoon.com">易事通</a></p>
 			</div>
 		</div>
 	</div>

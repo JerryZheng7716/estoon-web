@@ -6,13 +6,41 @@
     width: 180px;
     margin: 0    0;
 }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #007ce4;
+}
+
+.navbar{
+    z-index: 1030;
+}
+
+.navbar .dropdown-menu{
+    background-color: #007ce4CC;
+}
+
+.navbar .dropdown-menu a{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar .dropdown-menu a:hover{
+    color: black;
+    background-color: #007ce400;
+}
+
+.navbar .dropdown-menu li{
+    cursor: pointer;
+}
+
 
 .indent2{
     text-indent: 2em;
 }
 
 .count .mask{
-    background: #0007;
+    background: #00000077;
     min-height: 400px;
     padding:8em 0 5em;
 }
@@ -24,6 +52,18 @@
 .count .agile_count_grid_right p{
     text-shadow: 2px 2px 6px black;
     font-size: 2.5em;
+}
+
+.mask img{
+    margin: auto;
+}
+
+a:-moz-any-link{
+    cursor: pointer;
+}
+
+a:-webkit-any-link{
+    cursor: pointer;
 }
 
 html, body{
@@ -50,7 +90,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
-input[type="submit"],.w3ls_banner_scroll a,.agile_recent_tag ul li a,.agileits_categories ul li a,.w3agile_single_left1 ul li a,.agileits_tags ul li a,.w3agile_more a,.agileinfo_services_grid1 h4 a,.agileinfo_footer_grid_nav li a,.w3agile_footer_copy p a,.agileinfo_footer_grid ul.agileinfo_footer_grid_list li a,.w3_blog_grid_right h4 a,.w3_blog_grid_right ul li a,.view-sixth a.info,.wthree_steps_grid1,.wthree_steps_grid1_sub,.wthree_steps_grid h4{
+input[type="submit"],.w3ls_banner_scroll a,.agile_recent_tag ul li a,.agileits_categories ul li a,.w3agile_single_left1 ul li a,.agileits_tags ul li a,.w3agile_more a,.agileinfo_services_grid1 h4 a,.agileinfo_footer_grid_nav li a,.w3agile_footer_copy p a,.agileinfo_footer_grid ul.agileinfo_footer_grid_list li a,.product_grid_text h4 a,.product_grid_text ul li a,.view-sixth a.info,.wthree_steps_grid1,.wthree_steps_grid1_sub,.wthree_steps_grid h4{
 	transition: .5s ease-in;
 	-webkit-transition: .5s ease-in;
 	-moz-transition: .5s ease-in;
@@ -494,34 +534,46 @@ position:relative;
 .w3_blog_grids {
     margin: 3em 0 0;
 }
-.w3_blog_grid_left{
+.w3_blog_grid {
+    box-shadow: 2px 2px 10px #333333;
+    margin-bottom: 30px;
+}
+.product_grid_img{
 	padding:0;
 }
-.w3_blog_grid_right{
+.product_grid_text{
 	background: #008BFF;
-    padding: 5.5em 1.5em 0;
-    min-height: 406px;
+    padding:1.5em 1.5em 0;
+    min-height: 130px;
 }
-.w3_blog_grid_right h4 a{
+
+.product_grid_text_right{
+    min-height: 364px;
+}
+
+.product_grid_img_bottom{
+    min-height: 234px;
+}
+.product_grid_text h4 a{
 	font-size:1.3em;
 	color:#fff;
 	text-decoration:none;
 	text-transform:capitalize;
 }
-.w3_blog_grid_right h4 a:hover{
+.product_grid_text h4 a:hover{
 	color:#212121;
 }
-.w3_blog_grid_left img{
+.product_grid_img img{
 	width:100%;
 }
-.w3_blog_grid_right h5{
+.product_grid_text h5{
 	font-size:14px;
 	color:#212121;
 	padding:.5em 0 1em;
 	font-style:italic;
 	position:relative;
 }
-.w3_blog_grid_right h5:after{
+.product_grid_text h5:after{
 	content:'';
 	background:#fff;
 	height:2px;
@@ -530,26 +582,26 @@ position:relative;
 	bottom:0%;
 	left:0%;
 }
-.w3_blog_grid_right p{
+.product_grid_text p{
 	color:#fff;
 	line-height:2em;
-	margin:1.5em 0 1em;
+	margin:0.5em 0 0.5em;
 }
-.w3_blog_grid_right ul li{
+.product_grid_text ul li{
 	display:inline-block;
 	color:#fff;
 }
-.w3_blog_grid_right ul li span{
+.product_grid_text ul li span{
 	padding-right:1em;
 }
-.w3_blog_grid_right ul li a{
+.product_grid_text ul li a{
 	text-decoration:none;
 	color:#fff;
 }
-.w3_blog_grid_right ul li a:hover{
+.product_grid_text ul li a:hover{
 	color:#212121;
 }
-.w3_blog_grid_right ul li:last-child {
+.product_grid_text ul li:last-child {
     margin-left: 2em;
 }
 /*-- //blog --*/
@@ -813,8 +865,11 @@ ul.social-icons li .icon-button .pinterest:hover{
 }
 /*-- //to-top --*/
 /*-- services --*/
+.banner_solution h3{
+    text-shadow: 1px 1px 5px #FFF;
+}
 .banner1{
-	background:url(../images/9.jpg) no-repeat 0px 0px;
+	background:url(../images/banner_solution.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1526,7 +1581,6 @@ h2.typoh2{
 	}
 	.count {
 		min-height: 320px;
-		padding: 6em 0 5em;
 	}
 	.view-sixth .mask {
 		padding: 6.5em 0 0;
@@ -1563,7 +1617,6 @@ h2.typoh2{
 	}
 	.count {
 		min-height: 240px;
-		padding: 4em 0;
 	}
 	.agile_count_grid h3 {
 		font-size: 1.05em;
@@ -1574,14 +1627,14 @@ h2.typoh2{
 	.w3_blog_grid {
 		padding-left: 0;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		padding:4em 1em 0;
 		min-height: 342px;
 	}
-	.w3_blog_grid_right h4 a {
+	.product_grid_text h4 a {
 		font-size: 1.2em;
 	}
-	.w3_blog_grid_right ul li:last-child {
+	.product_grid_text ul li:last-child {
 		margin-left: 1em;
 	}
 	.w3agile_newsletter_left h3 {
@@ -1676,18 +1729,18 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 4.5em 0 0;
 	}
-	.w3_blog_grid_left,.w3_blog_grid_right {
+	.product_grid_img,.product_grid_text {
 		float: left;
 		width: 50%;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		padding: 10em 1em 0;
 		min-height: 531px;
 	}
 	.w3_blog_grid:nth-child(2) {
 		margin: 3em 0 0;
 	}
-	.w3_blog_grid_right p {
+	.product_grid_text p {
 		color: #fff;
 		line-height: 2em;
 		margin: 2.5em 0 2em;
@@ -1767,7 +1820,7 @@ h2.typoh2{
 		padding: 3em 0 0;
 	}
 	.count {
-		padding: 3em 0;
+
 	}
 	.agile_count_grid_left span, .agile_count_grid_right p {
 		font-size: 1.8em;
@@ -1775,7 +1828,7 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 3.5em 0 0;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 530px;
 	}
 	.banner1 {
@@ -1860,7 +1913,7 @@ h2.typoh2{
 	.wthree_steps_grid {
 		padding: 0;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 507px;
 	}
 	.agileinfo_footer_grid {
@@ -1900,7 +1953,7 @@ h2.typoh2{
 	.w3_blog_grid {
 		padding-left: 1em;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 422px;
 		padding: 7em 1em 0;
 	}
@@ -1960,7 +2013,7 @@ h2.typoh2{
 	}
 }
 @media (max-width: 600px){
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 393px;
 		padding: 5em 1em 0;
 	}
@@ -2002,7 +2055,7 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 5.5em 0 0;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 368px;
 		padding: 4em 1em 0;
 	}
@@ -2038,7 +2091,7 @@ h2.typoh2{
 		margin: 2em 0;
 	}
 	.count {
-		padding: 2em 0;
+
 	}
 	.agile_count_grid {
 		padding-left: 1em;
@@ -2049,16 +2102,16 @@ h2.typoh2{
 	.w3_blog_grid {
 		padding: 0;
 	}
-	.w3_blog_grid_right p {
+	.product_grid_text p {
 		margin: 1.5em 0 1em;
 	}
-	.w3_blog_grid_right ul li span {
+	.product_grid_text ul li span {
 		padding-right: .5em;
 	}
-	.w3_blog_grid_right ul li:last-child {
+	.product_grid_text ul li:last-child {
 		margin-left: 0.5em;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: 325px;
 		padding: 3.5em 1em 0;
 	}
@@ -2142,12 +2195,12 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 8.5em 0 0;
 	}
-	.w3_blog_grid_left, .w3_blog_grid_right {
+	.product_grid_img, .product_grid_text {
 		float: none;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		min-height: auto;
 		padding: 2em;
 	}
@@ -2215,8 +2268,8 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 7.5em 0 0;
 	}
-	.w3_blog_grid_right {
-		padding: 2em 2em 3em;
+	.product_grid_text {
+		padding: 2em 2em 0.5em;
 	}
 	.w3agile_single_left1 h4 {
 		line-height: 1.6em;
@@ -2279,16 +2332,16 @@ h2.typoh2{
 	.view-sixth .mask {
 		padding: 6.5em 0 0;
 	}
-	.w3_blog_grid_right h4 a {
+	.product_grid_text h4 a {
 		font-size: 1.1em;
 	}
-	.w3_blog_grid_right {
+	.product_grid_text {
 		padding: 1.5em 1.5em 2em;
 	}
-	.w3_blog_grid_left, .w3_blog_grid_right {
+	.product_grid_img, .product_grid_text {
 		width: 100%;
 	}
-	.w3_blog_grid_right ul li:last-child {
+	.product_grid_text ul li:last-child {
 		margin-left: 1.5em;
 	}
 	.w3agile_newsletter_right input[type="email"],p.b_label,p.urna,.w3_search input[type="text"],.w3_search input[type="submit"],.w3ls_comment input[type="text"], .w3ls_comment input[type="email"], .w3ls_comment textarea,.w3agile_single_left2_grid p,.w3agile_more a,.nav > li > a,.w3agile_newsletter_right input[type="submit"] {
