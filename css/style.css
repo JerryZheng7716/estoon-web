@@ -2455,3 +2455,14 @@ body a:hover{
     color: white;
     text-shadow: 2px 2px 6px #000000;
 }
+
+.erp_info h3{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.erp_info .erp_info_text {
+    padding-left: 30px;
+}
+.erp_info img{
+    padding-right: 30px;
+}
