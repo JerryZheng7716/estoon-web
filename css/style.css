@@ -2319,18 +2319,18 @@ h2.typoh2{
     position: relative;
 }
 
-.erp_banner_info, .wechat-app-banner {
+.erp_banner_info, .wechat-app-banner, .print-client-banner {
     text-align: center;
 }
 
-.erp_banner_info h1, .wechat-app-banner h1{
+.erp_banner_info h1, .wechat-app-banner h1, .print-client-banner h1{
     margin-top: 200px;
     color: white;
     text-shadow: 2px 2px 8px #000000;
     margin-bottom: 30px;
 }
 
-.erp_banner_info a, .wechat-app-banner a{
+.erp_banner_info a, .wechat-app-banner a, .print-client-banner a{
     color: white;
     text-shadow: 2px 2px 8px #000000;
     font-size: larger;
@@ -2496,6 +2496,36 @@ body a:hover{
     margin-top: 20px;
 }
 
+.print-client-banner{
+    background: url(../images/print_client_banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.print-client-info img{
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.print-client-info .urna{
+    margin-bottom: 50px;
+}
+
+.print-client-info span {
+    float: left;
+    margin-top: 20px;
+    display: block;
+}
+
+.print-client-info p {
+    margin-left: 1.5em;
+    margin-top: 20px;
+}
 /**
 手机宽度
  */
@@ -2504,7 +2534,7 @@ body a:hover{
         min-height: 350px;
         background-image: url("../images/banner-erp-mobile.jpg");
     }
-    .erp_banner_info h1, .wechat-app-banner h1{
+    .erp_banner_info h1, .wechat-app-banner h1, .print-client-banner h1{
         margin-top: 100px;
         font-size: x-large;
     }
@@ -2515,6 +2545,10 @@ body a:hover{
     .wechat-app-banner{
         min-height: 350px;
         background-image: url("../images/WeChat_app_banner-mobile.jpg");
+    }
+
+    .print-client-banner{
+        min-height: 350px;
     }
 
 }
