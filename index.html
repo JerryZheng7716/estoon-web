@@ -1,429 +1,440 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
+    <title>易事通</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="icon" href="images/icon.png" sizes="32x32">
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!--navigation-->
-	<div class="top-nav">
-		<div class="container">
-			<nav class="navbar navbar-default ">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h1><a class="navbar-brand" href="index.html"></a></h1>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="menu menu--shylock">
-						<ul class="nav navbar-nav link-effect-7" id="link-effect-7">
-							<li class="active"><a href="index.html" data-hover="主页">主页</a></li>
-							<li><a href="solution.html" data-hover="解决方案">解决方案</a></li>
-							<li class="dropdown" >
-								<a href="#" data-hover="产品介绍" class="dropdown-toggle" data-toggle="dropdown">
-									产品介绍
-									<b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="erp-system.html" data-hover="行业ERP系统">行业ERP系统</a></li>
-									<li><a href="weChat-app.html" data-hover="微信小程序">微信小程序</a></li>
-									<li><a href="#" data-hover="刻标软件">刻标软件</a></li>
-									<li><a href="app.html" data-hover="手机APP">手机APP</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html" data-hover="关于我们">关于我们</a></li>
-							<!--<li><a href="short-codes.html" data-hover="Short Codes">Short Codes</a></li>-->
-							<!--<li><a href="mail.html" data-hover="Mail Us">Mail Us</a></li>-->
-						</ul>
-					</nav>
-				</div>
-			</nav>	
-		</div>	
-	</div>	
+<div class="top-nav">
+    <div class="container">
+        <nav class="navbar navbar-default ">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1><a class="navbar-brand" href="index.html"></a></h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <nav class="menu menu--shylock">
+                    <ul class="nav navbar-nav link-effect-7" id="link-effect-7">
+                        <li class="active"><a href="index.html" data-hover="主页">主页</a></li>
+                        <li><a href="solution.html" data-hover="解决方案">解决方案</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-hover="产品介绍" class="dropdown-toggle" data-toggle="dropdown">
+                                产品介绍
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="erp-system.html" data-hover="行业ERP系统">行业ERP系统</a></li>
+                                <li><a href="weChat-app.html" data-hover="微信小程序">微信小程序</a></li>
+                                <li><a href="print-client.html" data-hover="刻标软件">刻标软件</a></li>
+                                <li><a href="app.html" data-hover="手机APP">手机APP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html" data-hover="关于我们">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+</div>
 <!--navigation-->
 <!-- banner -->
-	<div class="banner">
-		<div class="w3l_banner_info">
-			<div class="container">
-				<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<div class="w3l_banner_info_grid">
-									<h3>产品可识别化</h3>
-									<p>研发智联网技术与工业流控制相结合技术</p>
-								</div>
-							</li>
-							<li>
-								<div class="w3l_banner_info_grid">
-									<h3>业务数据化</h3>
-									<p>独创厨电行业ERP服务云平台</p>
-								</div>
-							</li>
-							<li>
-								<div class="w3l_banner_info_grid">
-									<h3>管理信息化</h3>
-									<p>搭建大数据跨平台应用架构</p>
-								</div>
-							</li>
-							<li>
-								<div class="w3l_banner_info_grid">
-									<h3>厨电后市场服务供应</h3>
-									<p>利用智联网技术数显所见即服务的理念，促进O2O模式与B2B服务的融合</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-						<!-- flexSlider -->
-							<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-							<script defer src="js/jquery.flexslider.js"></script>
-							<script type="text/javascript">
-							$(window).load(function(){
-							  $('.flexslider').flexslider({
-								animation: "slide",
-								start: function(slider){
-								  $('body').removeClass('loading');
-								}
-							  });
-							});
-						  </script>
-						<!-- //flexSlider -->
-				<!--<div class="w3ls_banner_scroll">-->
-					<!--<a href="#blog" class="scroll"></a>-->
-				<!--</div>-->
-			</div>
-		</div>
-	</div>
+<div class="banner">
+    <div class="w3l_banner_info">
+        <div class="container">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="w3l_banner_info_grid">
+                                <h3>产品可识别化</h3>
+                                <p>研发智联网技术与工业流控制相结合技术</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_info_grid">
+                                <h3>业务数据化</h3>
+                                <p>独创厨电行业ERP服务云平台</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_info_grid">
+                                <h3>管理信息化</h3>
+                                <p>搭建大数据跨平台应用架构</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_info_grid">
+                                <h3>厨电后市场服务供应</h3>
+                                <p>利用智联网技术数显所见即服务的理念，促进O2O模式与B2B服务的融合</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- flexSlider -->
+            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property=""/>
+            <script defer src="js/jquery.flexslider.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function (slider) {
+                            $('body').removeClass('loading');
+                        }
+                    });
+                });
+            </script>
+            <!-- //flexSlider -->
+            <!--<div class="w3ls_banner_scroll">-->
+            <!--<a href="#blog" class="scroll"></a>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
 <!-- //banner -->
 <!-- steps -->
-	<div class="steps">
-		<div class="container">
-			<h3 class="head">让最小的个体也能拥抱整个行业！</h3>
-			<p class="urna">Let the smallest individuals embrace the industry as well！</p>
-			<div class="wthree_steps_grids indent2">
-				<p>
-					绍兴易捷信息技术有限公司(简称: estoon易事通)是一家专注于互联网技术开发和运营的创新型企业。公司注册于有中国厨具之都之称的浙
-					江嵊州市。公司主要着力于互联网技术开发在厨具等传统制造业具体应用场景，以促进物联网技术在实体产业的应用为主要目的。公司目前具有完
-					全适合厨电企业的特色的ERP管理系统，能够精准地做到对产品的溯源、防伪、质保期管理、售后服务供应。
-				</p>
-				<p>
-					公司着力打造一个适合厨电行业的大供应链管理到微用户的信息管理平台
-					(S2B平台Supply chain platform To business)让供应端能够以足够低的成本和海
-					量的客户建立直接的关系，保持一个近乎实时互动的状态，真正落实行业互联网+的精神，推进传统制造业的转型升级。
-				</p>
+<div class="steps">
+    <div class="container">
+        <h3 class="head">让最小的个体也能拥抱整个行业！</h3>
+        <p class="urna">Let the smallest individuals embrace the industry as well！</p>
+        <div class="wthree_steps_grids indent2">
+            <p>
+                绍兴易捷信息技术有限公司(简称: estoon易事通)是一家专注于互联网技术开发和运营的创新型企业。公司注册于有中国厨具之都之称的浙
+                江嵊州市。公司主要着力于互联网技术开发在厨具等传统制造业具体应用场景，以促进物联网技术在实体产业的应用为主要目的。公司目前具有完
+                全适合厨电企业的特色的ERP管理系统，能够精准地做到对产品的溯源、防伪、质保期管理、售后服务供应。
+            </p>
+            <p>
+                公司着力打造一个适合厨电行业的大供应链管理到微用户的信息管理平台
+                (S2B平台Supply chain platform To business)让供应端能够以足够低的成本和海
+                量的客户建立直接的关系，保持一个近乎实时互动的状态，真正落实行业互联网+的精神，推进传统制造业的转型升级。
+            </p>
 
-			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+</div>
 <!-- //steps -->
 <!-- count-down -->
 <div class="count">
-	<div class="mask">
-		<div class="container">
-			<div class="col-md-3 agile_count_grid">
-				<div class="agile_count_grid_left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-				</div>
-				<div class="agile_count_grid_right">
-					<p class="counter">01</p>
-				</div>
-				<div class="clearfix"></div>
-				<h3>产品溯源、防伪、<br/>跟踪</h3>
-			</div>
-			<div class="col-md-3 agile_count_grid">
-				<div class="agile_count_grid_left">
-					<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-				</div>
-				<div class="agile_count_grid_right">
-					<p class="counter">02</p>
-				</div>
-				<div class="clearfix"></div>
-				<h3>产品质保期管理、加保、延保服务</h3>
-			</div>
-			<div class="col-md-3 agile_count_grid">
-				<div class="agile_count_grid_left">
-					<span class="glyphicon glyphicon-road" aria-hidden="true"></span>
-				</div>
-				<div class="agile_count_grid_right">
-					<p class="counter">03</p>
-				</div>
-				<div class="clearfix"></div>
-				<h3>产品全生命周期<br/>服务供应</h3>
-			</div>
-			<div class="col-md-3 agile_count_grid">
-				<div class="agile_count_grid_left">
-					<span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
-				</div>
-				<div class="agile_count_grid_right">
-					<p class="counter">04</p>
-				</div>
-				<div class="clearfix"></div>
-				<h3>产品智能化提升<br/>&nbsp;</h3>
-			</div>
-			<div class="clearfix"></div>
-			<!-- Starts-Number-Scroller-Animation-JavaScript -->
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/counterup.min.js"></script>
-			<script>
+    <div class="mask">
+        <div class="container">
+            <div class="col-md-3 agile_count_grid">
+                <div class="agile_count_grid_left">
+                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                </div>
+                <div class="agile_count_grid_right">
+                    <p class="counter">01</p>
+                </div>
+                <div class="clearfix"></div>
+                <h3>产品溯源、防伪、<br/>跟踪</h3>
+            </div>
+            <div class="col-md-3 agile_count_grid">
+                <div class="agile_count_grid_left">
+                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                </div>
+                <div class="agile_count_grid_right">
+                    <p class="counter">02</p>
+                </div>
+                <div class="clearfix"></div>
+                <h3>产品质保期管理、加保、延保服务</h3>
+            </div>
+            <div class="col-md-3 agile_count_grid">
+                <div class="agile_count_grid_left">
+                    <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+                </div>
+                <div class="agile_count_grid_right">
+                    <p class="counter">03</p>
+                </div>
+                <div class="clearfix"></div>
+                <h3>产品全生命周期<br/>服务供应</h3>
+            </div>
+            <div class="col-md-3 agile_count_grid">
+                <div class="agile_count_grid_left">
+                    <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
+                </div>
+                <div class="agile_count_grid_right">
+                    <p class="counter">04</p>
+                </div>
+                <div class="clearfix"></div>
+                <h3>产品智能化提升<br/>&nbsp;</h3>
+            </div>
+            <div class="clearfix"></div>
+            <!-- Starts-Number-Scroller-Animation-JavaScript -->
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/counterup.min.js"></script>
+            <script>
                 jQuery(document).ready(function ($) {
                     $('.counter').counterUp({
                         delay: 20,
                         time: 1000
                     });
                 });
-			</script>
-			<!-- //Starts-Number-Scroller-Animation-JavaScript -->
-		</div>
-	</div>
+            </script>
+            <!-- //Starts-Number-Scroller-Animation-JavaScript -->
+        </div>
+    </div>
 </div>
 
 <!-- //count-down -->
 <!-- work -->
-	<div class="work">
-		<h3 class="head">易事通</h3>
-		<p class="urna">厨电行业产业互联网的缔造者，传统企业向"互联网+"升级的推动者.</p>
-		<div class="agileits_work_grids">
-			<ul id="flexiselDemo1">			
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_1.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_2.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_3.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_4.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_5.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="agileits_work_grid view view-sixth">
-						<img src="images/est_6.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<a href="single.html" class="info">Read More</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-				<script type="text/javascript">
-					$(window).load(function() {
-						$("#flexiselDemo1").flexisel({
-							visibleItems: 4,
-							animationSpeed: 1000,
-							autoPlay: true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-							responsiveBreakpoints: { 
-								portrait: { 
-									changePoint:480,
-									visibleItems: 1
-								}, 
-								landscape: { 
-									changePoint:640,
-									visibleItems:2
-								},
-								tablet: { 
-									changePoint:768,
-									visibleItems: 3
-								}
-							}
-						});
-						
-					});
-				</script>
-				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		</div>
-	</div>
+<div class="work">
+    <h3 class="head">易事通</h3>
+    <p class="urna">厨电行业产业互联网的缔造者，传统企业向"互联网+"升级的推动者.</p>
+    <div class="agileits_work_grids">
+        <ul id="flexiselDemo1">
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_1.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_2.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_3.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_4.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_5.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="agileits_work_grid view view-sixth">
+                    <img src="images/est_6.jpg" alt=" " class="img-responsive"/>
+                    <div class="mask">
+                        <a href="single.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo1").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    </div>
+</div>
 <!-- //work -->
 <!-- blog -->
-	<div class="blog" id="blog">
-		<div class="container">
-			<h3 class="head">最新产品</h3>
-			<p class="urna">易事通行业ERP系统、易事通微信小程序、易事通刻标软件</p>
-			<div class="w3_blog_grids">
-				<div class="col-md-4" >
-					<div class="w3_blog_grid view view-sixth">
-						<div class="col-md-12 product_grid_text product_grid_text_top">
-							<h4><a href="single.html">行业ERP系统</a></h4>
-							<h5>Industry ERP system</h5>
-							<p>为厨电行业量身定制的ERP</p>
-						</div>
-						<div class="col-md-12 product_grid_img product_grid_img_bottom">
-							<a href="single.html"><img src="images/estoon_login.jpg" alt=" " class="img-responsive" /></a>
-						</div>
-						<div class="clearfix"> </div>
-						<div class="mask">
-							<a href="erp-system.html" class="info">点击了解更多</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="w3_blog_grid view view-sixth">
-						<div class="col-md-5 product_grid_text product_grid_text_right">
-							<h4><a href="single.html">微信<br>小程序</a></h4>
-							<h5>WeChat<br>applet</h5>
-							<p>移植<br>行业ERP系统<br>部分功能，<br>方便手机使用.</p>
-						</div>
-						<div class="col-md-7 product_grid_img product_grid_img_left">
-							<a href="single.html"><img src="images/weChat_app.png" alt=" " class="img-responsive" /></a>
-						</div>
-						<div class="clearfix"> </div>
-						<div class="mask">
-							<a href="erp-system.html" class="info">点击了解更多</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="w3_blog_grid view view-sixth">
-						<div class="col-md-12 product_grid_text product_grid_text_top">
-							<h4><a href="single.html">刻标软件</a></h4>
-							<h5>Label print client</h5>
-							<p>为产品雕刻唯一产品识别码，溯源防伪.</p>
-						</div>
-						<div class="col-md-12 product_grid_img product_grid_img_bottom">
-							<a href="single.html"><img src="images/label_print_client.jpg" alt=" " class="img-responsive" /></a>
-						</div>
-						<div class="mask">
-							<a href="erp-system.html" class="info">点击了解更多</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+<div class="blog" id="blog">
+    <div class="container">
+        <h3 class="head">最新产品</h3>
+        <p class="urna">易事通行业ERP系统、易事通微信小程序、易事通刻标软件</p>
+        <div class="w3_blog_grids">
+            <div class="col-md-4">
+                <div class="w3_blog_grid view view-sixth">
+                    <div class="col-md-12 product_grid_text product_grid_text_top">
+                        <h4><a href="single.html">行业ERP系统</a></h4>
+                        <h5>Industry ERP system</h5>
+                        <p>为厨电行业量身定制的ERP</p>
+                    </div>
+                    <div class="col-md-12 product_grid_img product_grid_img_bottom">
+                        <a href="single.html"><img src="images/estoon_login.jpg" alt=" " class="img-responsive"/></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mask">
+                        <a href="erp-system.html" class="info">点击了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w3_blog_grid view view-sixth">
+                    <div class="col-md-5 product_grid_text product_grid_text_right">
+                        <h4><a href="single.html">微信<br>小程序</a></h4>
+                        <h5>WeChat<br>applet</h5>
+                        <p>移植<br>行业ERP系统<br>部分功能，<br>方便手机使用.</p>
+                    </div>
+                    <div class="col-md-7 product_grid_img product_grid_img_left">
+                        <a href="single.html"><img src="images/weChat_app.png" alt=" " class="img-responsive"/></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mask">
+                        <a href="erp-system.html" class="info">点击了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w3_blog_grid view view-sixth">
+                    <div class="col-md-12 product_grid_text product_grid_text_top">
+                        <h4><a href="single.html">刻标软件</a></h4>
+                        <h5>Label print client</h5>
+                        <p>为产品雕刻唯一产品识别码，溯源防伪.</p>
+                    </div>
+                    <div class="col-md-12 product_grid_img product_grid_img_bottom">
+                        <a href="single.html"><img src="images/label_print_client.jpg" alt=" " class="img-responsive"/></a>
+                    </div>
+                    <div class="mask">
+                        <a href="erp-system.html" class="info">点击了解更多</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
 <!-- //blog -->
 <!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>欢迎使用易事通服务平台</h3>
-				<p class="indent2">易事通是一家物联网技术在厨电企业应用的产业互联网企业，公司有完全适合厨电企业特色的ERP管理系统，
-					能够精准地做到对产品的溯源、防伪、保修期管理，用大数据实现上游供应链管理，
-					下游销售渠道管控以及售后服务集中供应的产业平台。系统服务电话：0575-81383566</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+<div class="newsletter">
+    <div class="container">
+        <div class="col-md-6 w3agile_newsletter_left">
+            <h3>欢迎使用易事通服务平台</h3>
+            <p class="indent2">易事通是一家物联网技术在厨电企业应用的产业互联网企业，公司有完全适合厨电企业特色的ERP管理系统，
+                能够精准地做到对产品的溯源、防伪、保修期管理，用大数据实现上游供应链管理，
+                下游销售渠道管控以及售后服务集中供应的产业平台。系统服务电话：0575-81383566</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
 <!-- //newsletter -->
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="agileinfo_footer_grids">
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h2><a>易捷信息</a></h2>
-					<p>易事通与易捷信息，均为绍兴易捷信息技术有限公司旗下品牌.其所有权均为绍兴易捷信息技术有限公司所有</p>
-					<ul class="social-icons">
-						<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
-						<li><a href="#" class="icon-button google"><i class="icon-google"></i><span></span></a></li>
-						<li><a href="#" class="icon-button v"><i class="icon-v"></i><span></span></a></li>
-						<li><a href="#" class="icon-button pinterest"><i class="pinterest"></i><span></span></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>联系方式</h3>
-					<ul class="agileinfo_footer_grid_list">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>浙江省嵊州市江二路25号</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@estoon.com">info@estoon.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0575-81383566</li>
-					</ul>
-				</div>
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>快速访问</h3>
-					<ul class="agileinfo_footer_grid_nav">
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">主页</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="solution.html">解决方案</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">关于我们</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="w3agile_footer_copy">
-				<p>Copyright &copy; 2019.绍兴易捷信息技术有限公司 All rights reserved.<a target="_blank" href="http://www.estoon.com">易事通</a></p>
-			</div>
-		</div>
-	</div>
+<div class="footer">
+    <div class="container">
+        <div class="agileinfo_footer_grids">
+            <div class="col-md-4 agileinfo_footer_grid">
+                <h2><a>易捷信息</a></h2>
+                <p>易事通与易捷信息，均为绍兴易捷信息技术有限公司旗下品牌.其所有权均为绍兴易捷信息技术有限公司所有</p>
+                <ul class="social-icons">
+                    <li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
+                    <li><a href="#" class="icon-button google"><i class="icon-google"></i><span></span></a></li>
+                    <li><a href="#" class="icon-button v"><i class="icon-v"></i><span></span></a></li>
+                    <li><a href="#" class="icon-button pinterest"><i class="pinterest"></i><span></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 agileinfo_footer_grid">
+                <h3>联系方式</h3>
+                <ul class="agileinfo_footer_grid_list">
+                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>浙江省嵊州市江二路25号</span></li>
+                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@estoon.com">info@estoon.com</a>
+                    </li>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0575-81383566</li>
+                </ul>
+            </div>
+            <div class="col-md-4 agileinfo_footer_grid">
+                <h3>快速访问</h3>
+                <ul class="agileinfo_footer_grid_nav">
+                    <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">主页</a>
+                    </li>
+                    <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a
+                            href="solution.html">解决方案</a></li>
+                    <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="w3agile_footer_copy">
+            <p>Copyright &copy; 2019.绍兴易捷信息技术有限公司 All rights reserved.<a target="_blank" href="http://www.estoon.com">易事通</a>
+            </p>
+        </div>
+    </div>
+</div>
 <!-- //footer -->
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({easingType: 'easeOutQuart'});
+
+    });
+</script>
 <!-- //here ends scrolling icon -->
 </body>
 </html>

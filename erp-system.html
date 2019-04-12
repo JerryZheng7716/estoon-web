@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+	<title>行业ERP</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="keywords" content=""/>
+	<script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<link rel="icon" href="images/icon.png" sizes="32x32">
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+	</script>
+	<!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!--navigation-->
-	<div class="top-nav">
-		<div class="container">
-			<nav class="navbar navbar-default ">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h1><a class="navbar-brand" href="index.html"></a></h1>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="menu menu--shylock">
-						<ul class="nav navbar-nav link-effect-7" id="link-effect-7">
-							<li class="active"><a href="index.html" data-hover="主页">主页</a></li>
-							<li><a href="solution.html" data-hover="解决方案">解决方案</a></li>
-							<li class="dropdown" >
-								<a href="#" data-hover="产品介绍" class="dropdown-toggle" data-toggle="dropdown">
-									产品介绍
-									<b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="erp-system.html" data-hover="行业ERP系统">行业ERP系统</a></li>
-									<li><a href="weChat-app.html" data-hover="微信小程序">微信小程序</a></li>
-									<li><a href="#" data-hover="刻标软件">刻标软件</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html" data-hover="关于我们">关于我们</a></li>
-							<!--<li><a href="short-codes.html" data-hover="Short Codes">Short Codes</a></li>-->
-							<!--<li><a href="mail.html" data-hover="Mail Us">Mail Us</a></li>-->
-						</ul>
-					</nav>
-				</div>
-			</nav>	
-		</div>	
-	</div>	
+<div class="top-nav">
+	<div class="container">
+		<nav class="navbar navbar-default ">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html"></a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="menu menu--shylock">
+					<ul class="nav navbar-nav link-effect-7" id="link-effect-7">
+						<li><a href="index.html" data-hover="主页">主页</a></li>
+						<li><a href="solution.html" data-hover="解决方案">解决方案</a></li>
+						<li class="dropdown active">
+							<a href="#" data-hover="产品介绍" class="dropdown-toggle" data-toggle="dropdown">
+								产品介绍
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="erp-system.html" data-hover="行业ERP系统">行业ERP系统</a></li>
+								<li><a href="weChat-app.html" data-hover="微信小程序">微信小程序</a></li>
+								<li><a href="print-client.html" data-hover="刻标软件">刻标软件</a></li>
+								<li><a href="app.html" data-hover="手机APP">手机APP</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html" data-hover="关于我们">关于我们</a></li>
+					</ul>
+				</nav>
+			</div>
+		</nav>
+	</div>
+</div>
 <!--navigation-->
 <!-- banner -->
 	<div class="banner erp-banner">

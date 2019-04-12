@@ -2526,6 +2526,32 @@ body a:hover{
     margin-left: 1.5em;
     margin-top: 20px;
 }
+
+.about-map p{
+    color: #555555;
+}
+
+.about-map .text h2{
+    margin: 50px 0 20px 0px;
+}
+
+.about-map .text{
+    padding-left: 40px;
+}
+
+.about-map {
+    background: #F5F5F5;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about-map h3{
+    margin-bottom: 30px;
+}
+
+.about-map .baidu_map{
+    box-shadow: 2px 2px 6px #cccccc;
+}
 /**
 手机宽度
  */
@@ -2551,5 +2577,12 @@ body a:hover{
         min-height: 350px;
     }
 
+    .about-map #allmap{
+        height: 450px !important;
+    }
+
+}
+.link-effect-7 li.active .dropdown-menu a::before{
+    color: white;
 }
 
