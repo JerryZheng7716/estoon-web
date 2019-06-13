@@ -223,49 +223,49 @@
         <ul id="flexiselDemo1">
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_1.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_1.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_2.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_2.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_3.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_3.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_4.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_4.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_5.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_5.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="agileits_work_grid view view-sixth">
-                    <img src="images/est_6.jpg" alt=" " class="img-responsive"/>
+                    <img src="images/solution_6.jpg" alt=" " class="img-responsive"/>
                     <div class="mask">
-                        <a href="single.html" class="info">Read More</a>
+                        <a href="solution.html" class="info">了解更多</a>
                     </div>
                 </div>
             </li>
@@ -310,12 +310,12 @@
             <div class="col-md-4">
                 <div class="w3_blog_grid view view-sixth">
                     <div class="col-md-12 product_grid_text product_grid_text_top">
-                        <h4><a href="single.html">行业ERP系统</a></h4>
+                        <h4><a href="solution.html">行业ERP系统</a></h4>
                         <h5>Industry ERP system</h5>
                         <p>为厨电行业量身定制的ERP</p>
                     </div>
                     <div class="col-md-12 product_grid_img product_grid_img_bottom">
-                        <a href="single.html"><img src="images/estoon_login.jpg" alt=" " class="img-responsive"/></a>
+                        <a href="solution.html"><img src="images/estoon_login.jpg" alt=" " class="img-responsive"/></a>
                     </div>
                     <div class="clearfix"></div>
                     <div class="mask">
@@ -326,12 +326,12 @@
             <div class="col-md-4">
                 <div class="w3_blog_grid view view-sixth">
                     <div class="col-md-5 product_grid_text product_grid_text_right">
-                        <h4><a href="single.html">微信<br>小程序</a></h4>
+                        <h4><a href="solution.html">微信<br>小程序</a></h4>
                         <h5>WeChat<br>applet</h5>
                         <p>移植<br>行业ERP系统<br>部分功能，<br>方便手机使用.</p>
                     </div>
                     <div class="col-md-7 product_grid_img product_grid_img_left">
-                        <a href="single.html"><img src="images/weChat_app.png" alt=" " class="img-responsive"/></a>
+                        <a href="solution.html"><img src="images/weChat_app.png" alt=" " class="img-responsive"/></a>
                     </div>
                     <div class="clearfix"></div>
                     <div class="mask">
@@ -342,12 +342,12 @@
             <div class="col-md-4">
                 <div class="w3_blog_grid view view-sixth">
                     <div class="col-md-12 product_grid_text product_grid_text_top">
-                        <h4><a href="single.html">刻标软件</a></h4>
+                        <h4><a href="solution.html">刻标软件</a></h4>
                         <h5>Label print client</h5>
                         <p>为产品雕刻唯一产品识别码，溯源防伪.</p>
                     </div>
                     <div class="col-md-12 product_grid_img product_grid_img_bottom">
-                        <a href="single.html"><img src="images/label_print_client.jpg" alt=" " class="img-responsive"/></a>
+                        <a href="solution.html"><img src="images/label_print_client.jpg" alt=" " class="img-responsive"/></a>
                     </div>
                     <div class="mask">
                         <a href="erp-system.html" class="info">点击了解更多</a>
@@ -418,6 +418,7 @@
 <!-- //footer -->
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/toucheffects.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 <script type="text/javascript">
@@ -432,8 +433,9 @@
         */
 
         $().UItoTop({easingType: 'easeOutQuart'});
-
     });
+    $(".view").attr('ontouchstart', 'hover(this)');//hover效果
+    $(".view").attr('ontouchend', 'mouseout(this)');//秒除hover
 </script>
 <!-- //here ends scrolling icon -->
 </body>
