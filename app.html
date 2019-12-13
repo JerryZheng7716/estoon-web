@@ -25,9 +25,10 @@
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/versionHelper.js"></script>
 	<script type="text/javascript">
         jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
+            $(".scroll").click(function (event) {s
                 event.preventDefault();
                 $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
             });
@@ -77,16 +78,38 @@
 	</div>
 </div>
 <!--navigation-->
-<!-- newsletter -->
-<div class="container">
-	<div class="col-md-6 col-lg-push-1 col-md-push-1">
-		<h1 style="color: black;padding: 100px 0 50px 0">易事通行业ERP系统手机版本</h1>
-		<h3 style="margin-bottom: 50px">正在研发，敬请期待...</h3>
-	</div>
-	<img src="images/app_phone.png" class="img-responsive col-md-5 col-lg-4 col-lg-push-1 col-xs-10 col-xs-push-1" style="margin: 50px 0 50px 0">
-	<div class="clearfix"> </div>
+<!-- banner -->
+<div class="banner app-banner">
+<!--	<div class="wechat-app_info">-->
+<!--		<div class="container">-->
+<!--			<h1>移动端与桌面端相结合，打造您口袋中的数字企业</sh1>-->
+<!--			<a>了解解决方案</a>-->
+<!--		</div>-->
+<!--	</div>-->
 </div>
+<!-- //banner -->
+<!-- newsletter -->
 <!-- //newsletter -->
+<!--version-->
+<section class="last-case">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 section-header">
+				<h2>历史版本</h2>
+				<a class="download-last-case">下载最新版本</a>
+			</div>
+		</div>
+	</div>
+</section><!-- About information Ends -->
+
+<section class="old-case">
+	<div class="container">
+		<div class="row" id="version">
+
+		</div>
+	</div>
+</section>
+<!--version-->
 <!-- newsletter -->
 <div class="newsletter">
 	<div class="container">

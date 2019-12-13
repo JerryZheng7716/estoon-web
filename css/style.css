@@ -2469,6 +2469,17 @@ body a:hover{
     position: relative;
 }
 
+.app-banner{
+    background: url(../images/app-banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
 .wechat-app-gif img{
     margin-top: -300px;
 }
@@ -2608,5 +2619,81 @@ body a:hover{
 }
 .link-effect-7 li.active .dropdown-menu a::before{
     color: white;
+}
+
+.last-case{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-header h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #313131;
+    font-family: "Lora", serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.section-header h2:before {
+    border-left: 50px solid #DADADA;
+    border-right: 50px solid #DADADA;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -70px;
+    position: absolute;
+    width: 130px;
+}
+
+.section-header h2:after {
+    background: #1ba3e9 none repeat scroll 0 0 padding-box content-box;
+    border-bottom: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    bottom: -10px;
+    content: "";
+    height: 22px;
+    left: 50%;
+    margin-left: -16px;
+    padding: 0 0 8px 8px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 22px;
+}
+
+.section-header p {
+    text-align: center;
+    color: #969595;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.section-header img {
+    margin-top: -250px;
+}
+
+
+.old-case{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.old-case .section-header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.old-case ul{
+    margin-top: 16px;
+    padding-left: 42px;
+    font-size: 16px;
 }
 
