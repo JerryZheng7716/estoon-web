@@ -25,7 +25,7 @@
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/versionHelper.js"></script>
+	<script type="text/javascript" src="assets/androidApp/versionHelper.js"></script>
 	<script type="text/javascript">
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {s
@@ -156,7 +156,11 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="w3agile_footer_copy">
-				<p>Copyright &copy; 2019.绍兴易捷信息技术有限公司 All rights reserved.<a target="_blank" href="http://www.estoon.com">易事通</a></p>
+				<p>
+					<a href="http://www.beian.miit.gov.cn">浙ICP备18025136号-1</a>
+					Copyright &copy; 2019.绍兴易捷信息技术有限公司 All rights reserved.
+					<a target="_blank" href="http://www.estoon.com">易事通</a>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -179,6 +183,7 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 								
 			});
+        setHistoryVer();
 	</script>
 <!-- //here ends scrolling icon -->
 </body>

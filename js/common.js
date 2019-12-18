@@ -21,13 +21,12 @@ $(function () {
     })
 });
 
-// 历史版本
-$(function () {
+function setHistoryVer(){
     if (set()){
         $("#version").append(set());
         $(".download-last-case").attr("href",updateUrl+ver[ver.length-1].apkName);
     }
-});
+}
 
 function set(){
     let string ="";
